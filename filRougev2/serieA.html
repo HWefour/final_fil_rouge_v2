@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b8c4b9290.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="equipes">
+        <div class="cardequipelogo">
+            <div class="atalanta equipe">
+                <img class="logoequipe" src="./imgs/atalanta.png" alt="equipes de foot belles">
+                <h6>Atalanta</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li onclick="genererNews(499);">News</li>
+                    <li id="btn-club">Club info</li>
+                    <li onclick="genererSquad(499);">Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="bologna equipe">
+                <img class="logoequipe" src="./imgs/bologna.png" alt="equipes de foot belles">
+                <h6>Bologna</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li onclick="genererNews(500);">News</li>
+                    <li onclick="afficherInfoEquipe2();">Club info</li>
+                    <li onclick="genererSquad(500);">Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="cremonese equipe">
+                <img class="logoequipe" src="./imgs/cremonese.png" alt="equipes de foot belles">
+                <h6>Cremonese</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="empoli equipe">
+                <img class="logoequipe" src="./imgs/empoli.png" alt="equipes de foot belles" >
+                <h6>Empoli</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="fiorentina equipe">
+                <img class="logoequipe" src="./imgs/fiorentina.png" alt="equipes de foot belles">
+                <h6>Fiorentina</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="inter equipe">
+                <img class="logoequipe" src="./imgs/inter.png" alt="equipes de foot belles">
+                <h6>Inter</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="juventus equipe">
+                <img class="logoequipe" src="./imgs/juventus.png" alt="equipes de foot belles">
+                <h6>Juventus</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="lazio equipe">
+                <img class="logoequipe" src="./imgs/lazio.png" alt="equipes de foot belles">
+                <h6>Lazio</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="lecce equipe">
+                <img class="logoequipe" src="./imgs/lecc.png" alt="equipes de foot belles">
+                <h6>Lecce</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="milan equipe">
+                <img class="logoequipe" src="./imgs/acmilan.png" alt="equipes de foot belles">
+                <h6>Milan</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="monza equipe">
+                <img class="logoequipe" src="./imgs/monza.png" alt="equipes de foot belles">
+                <h6>Monza</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="napoli equipe">
+                <img class="logoequipe" src="./imgs/napoli.png" alt="equipes de foot belles">
+                <h6>Napoli</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="roma equipe">
+                <img class="logoequipe" src="./imgs/roma.png" alt="equipes de foot belles">
+                <h6>Roma</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="salernitana equipe">
+                <img class="logoequipe" src="./imgs/salernitana.png" alt="equipes de foot belles">
+                <h6>Salernitana</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="sampdoria equipe">
+                <img class="logoequipe" src="./imgs/sampdoria.png" alt="equipes de foot belles">
+                <h6>Sampdoria</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="sassuolo equipe">
+                <img class="logoequipe" src="./imgs/sassuolo.png" alt="equipes de foot belles">
+                <h6>Sassuolo</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="spezia equipe">
+                <img class="logoequipe" src="./imgs/spezia.png" alt="equipes de foot belles">
+                <h6>Spezia</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="torino equipe">
+                <img class="logoequipe" src="./imgs/torino.png" alt="equipes de foot belles">
+                <h6>Torino</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="udinese equipe">
+                <img class="logoequipe" src="./imgs/udinese.png" alt="equipes de foot belles">
+                <h6>udinese</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cardequipelogo">
+            <div class="verona equipe">
+                <img class="logoequipe" src="./imgs/hellasverona.png" alt="equipes de foot belles">
+                <h6>Verona</h6>
+            </div>
+            <div class="cardli">
+                <ul>
+                    <li>News</li>
+                    <li>Club info</li>
+                    <li>Squad</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <nav>
+        <div class="navigation">
+            <a href="./index.html"><img class="imgNav" src="./imgs/icons8-stade-30.png" alt="stade"></a>
+            <a href=""><img class="imgNav" src="./imgs/icons8-youtube-live-50.png" alt="ytb"></a>
+            <a href=""><img class="imgNav" src="./imgs/icons8-étoile-50.png" alt="star"></a>
+            <a href=""><img class="imgNav" src="./imgs/icons8-trohpée-euro-uefa-50.png" alt="trophee"></a>
+            <a href=""><img class="imgNav" src="./imgs/icons8-utilisateur-48.png" alt="compte"></a>
+        </div>
+    </nav>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
